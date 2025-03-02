@@ -6,8 +6,8 @@ import Link from 'next/link';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const dropdownRef = useRef<HTMLUListElement>(null);
-  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const dropdownRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   // Handle scroll event for navbar color change
   useEffect(() => {
@@ -27,12 +27,12 @@ const Navbar = () => {
 
   // Handle clicks outside of dropdown to close it
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event) => {
       if (
         dropdownRef.current && 
         hamburgerRef.current && 
-        !dropdownRef.current.contains(event.target as Node) && 
-        !hamburgerRef.current.contains(event.target as Node)
+        !dropdownRef.current.contains(event.target) && 
+        !hamburgerRef.current.contains(event.target)
       ) {
         setIsMenuOpen(false);
       }
