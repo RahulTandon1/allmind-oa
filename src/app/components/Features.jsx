@@ -52,13 +52,22 @@ const features_descriptions = [
         src: "/assets/images/chat-demo-ss.png",
         altText: "preview",
         heading: "Ask any question",
-        description: "Camel uses your live data.<br />Get tables and charts instantly."
+        description: (
+        <>
+        Camel uses your live data.
+        <br />Get tables and charts instantly.
+        </>
+        )
     },
     {
         src: "/assets/images/dashboard-demo-ss.png",
         altText: "preview",
         heading: "Powerful Dashboards",
-        description: "Save any graph to a live dashboard.<br>Start a chat to answer ad hoc questions."
+        description: (
+        <>
+        Save any graph to a live dashboard.<br />Start a chat to answer ad hoc questions.
+        </>
+        )
     }
 ]
 
