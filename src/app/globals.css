@@ -55,25 +55,23 @@ body {
 /* for logo carousel */
 @keyframes marquee {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-30%); }
 }
 
 @keyframes marquee-reverse {
-  0% { transform: translateX(-50%); }
+  0% { transform: translateX(-30%); }
   100% { transform: translateX(0%); }
 }
 
 .animate-marquee {
   display: flex;
   white-space: nowrap;
-  overflow: hidden;
   animation: marquee 15s linear infinite;
 }
 
 .animate-marquee-reverse {
   display: flex;
   white-space: nowrap;
-  overflow: hidden;
   animation: marquee-reverse 15s linear infinite;
 }
 

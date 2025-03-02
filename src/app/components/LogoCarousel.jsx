@@ -4,24 +4,31 @@ import React from 'react';
 
 const LogoCarousel = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-transparent to-black/10 pb-16">
+    <section className="relative overflow-hidden bg-gradient-to-b from-transparent to-black/10 py-16">
       <div className="flex flex-col gap-4 relative">
         {/* Fade overlay elements */}
-        <div className="absolute top-0 left-0 w-52 h-full z-10 bg-gradient-to-r from-white to-transparent" />
-        <div className="absolute top-0 right-0 w-52 h-full z-10 bg-gradient-to-l from-white to-transparent" />
+        {/* <div className="absolute top-0 left-0 w-52 h-full z-10 bg-gradient-to-r from-white to-transparent" />
+        <div className="absolute top-0 right-0 w-52 h-full z-10 bg-gradient-to-l from-white to-transparent" /> */}
         
         {/* Scrolling Track */}
-        <div className="relative flex w-full overflow-hidden">
-          <div className="flex w-max animate-marquee space-x-4">
+        <div className="relative flex w-full">
+          <div className="flex gap-x-5 w-max animate-marquee">
             {logos.concat(logos).map((logo, index) => (
-              <Image key={index} src={logo.src} alt={logo.alt} width={80} height={80} className="h-20 w-20 object-contain grayscale-[10%] brightness-80 opacity-70 transition-all duration-300 hover:grayscale-0 hover:brightness-100 hover:opacity-100 hover:scale-110" />
+              <Image 
+                key={index} 
+                src={logo.src} 
+                alt={logo.alt} 
+                width={80} 
+                height={80} 
+                className="h-20 grayscale-[10%] brightness-80 opacity-70 transition-all duration-300 hover:grayscale-0 hover:brightness-100 hover:opacity-100 hover:scale-110" 
+              />
             ))}
           </div>
         </div>
         
         {/* Reverse Scrolling Track */}
-        <div className="relative flex w-full overflow-hidden">
-          <div className="flex w-max animate-marquee-reverse space-x-4">
+        <div className="relative flex w-full">
+        <div className="flex gap-x-5 w-max animate-marquee-reverse">
             {logos.concat(logos).map((logo, index) => (
               <Image key={`reverse-${index}`} src={logo.src} alt={logo.alt} width={80} height={80} className="h-20 w-20 object-contain grayscale-[10%] brightness-80 opacity-70 transition-all duration-300 hover:grayscale-0 hover:brightness-100 hover:opacity-100 hover:scale-110" />
             ))}
