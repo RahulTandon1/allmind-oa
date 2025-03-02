@@ -79,10 +79,10 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Footer Links */}
-        <div className="footer-header-section-right flex flex-wrap gap-10 mt-10 lg:mt-0">
+        <div className="flex flex-wrap gap-10 mt-10 lg:mt-0">
           {footerLinks.map((section) => (
-            <div key={section.title} className="footer-docs-list">
-              <p className="footer-docs-header font-bold text-gray-400">{section.title}</p>
+            <div key={section.title} className="flex flex-col justify-start gap-y-4 ">
+              <p className="font-bold text-gray-400">{section.title}</p>
               {section.links.map((link) => (
                 <a key={link.href} href={link.href} className="text-sm hover:text-gray-300">
                   {link.label}

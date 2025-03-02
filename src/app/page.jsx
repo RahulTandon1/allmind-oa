@@ -9,7 +9,6 @@ export default function Home() {
 		<Navbar />
 		<HeroSection />
 		<LogoCarousel />
-		<section>section 1</section>
 		<Footer />
     </div>
   );
