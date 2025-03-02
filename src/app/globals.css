@@ -50,3 +50,34 @@ body {
   background-size: 300% 300%;
   animation: gradientShift 6s ease infinite;
 }
+
+
+/* for logo carousel */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee-reverse 15s linear infinite;
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
+
