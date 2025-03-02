@@ -8,6 +8,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F */
+  --lightBlue: #58F1FF,
+  --darkBlue: #5F83F0,
+  --myPink: #E54BDA,
+  --myOrange: #FF8D29,
+  --myRed: #F83A31,
+  --myPurple: #35012F,
+  /* --customGradient: 45deg, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F */
+  /* --customGradient-bg: linear-gradient(45deg, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F); */
+  /* --gradient-bg: linear-gradient(45deg, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F); */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,4 +31,22 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* for intro section CSS */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-animated-gradient {
+  background: linear-gradient(45deg, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F);
+  background-size: 300% 300%;
+  animation: gradientShift 6s ease infinite;
 }
