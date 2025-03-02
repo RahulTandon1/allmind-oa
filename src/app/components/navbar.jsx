@@ -67,7 +67,7 @@ const Navbar = () => {
                 <li>
                   <a 
                     href="https://camelai.com/blog" 
-                    className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                    className="text-gray-500 hover:text-gray-300 transition-colors duration-200"
                   >
                     Blog
                   </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <li>
                   <Link 
                     href="/pricing" 
-                    className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                    className="text-gray-500 hover:text-gray-300 transition-colors duration-200"
                   >
                     Pricing
                   </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <li>
                   <a 
                     href="https://app.camelai.com" 
-                    className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                    className="text-gray-500 hover:text-gray-300 transition-colors duration-200"
                   >
                     Log in
                   </a>
@@ -115,7 +115,7 @@ const Navbar = () => {
                   <li>
                     <a 
                       href="https://camelai.com/blog" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-500 hover:bg-gray-100"
                     >
                       Blog
                     </a>
@@ -123,7 +123,7 @@ const Navbar = () => {
                   <li>
                     <Link 
                       href="/pricing" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-500 hover:bg-gray-100"
                     >
                       Pricing
                     </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
                   <li>
                     <a 
                       href="https://app.camelai.com" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-500 hover:bg-gray-100"
                     >
                       Log in
                     </a>
